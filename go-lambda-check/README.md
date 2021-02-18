@@ -1,7 +1,15 @@
 
 # **Health check Lambda**
 
-check healthy server by Lambda function  
+check healthy server by Lambda function
+
+Package used in project icap-client ( https://github.com/egirna/icap-client )
+
+operation first send request with pdf file to ICAP server
+
+"icap://" + host" + port  + service
+
+read response from ICAP server if successfully return pdf file with string "Glasswall Processed" will be healthy server   
 
 [**Requirement]()**
 

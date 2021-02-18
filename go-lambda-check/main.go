@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/icapeg-client/client"
+	"github.com/k8-proxy/vmware-scripts/go-lambda-check/client"
 
 	"github.com/aws/aws-lambda-go/lambda"
 )

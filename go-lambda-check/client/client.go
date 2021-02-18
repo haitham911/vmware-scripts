@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	ic "github.com/egirna/icap-client"
+	ic "github.com/k8-proxy/icap-client"
 )
 
 //ICAP
@@ -25,13 +25,6 @@ func Clienticap(server string) string {
 	port := "1344"
 	service := "gw_rebuild"
 	timeout := time.Duration(40) * time.Second
-	/*fmt.Println(file)
-	     us.icap.glasswall-icap.com
-		fmt.Println(host)
-		fmt.Println(port)
-		fmt.Println(service)
-		fmt.Println(timeout)
-		fmt.Println(filepath)*/
 
 	httpReq, err := http.NewRequest(http.MethodGet, file, nil)
 
@@ -92,14 +85,6 @@ func Clienticap(server string) string {
 	}
 
 	req.SetPreview(optResp.PreviewBytes)
-	/*
-		fmt.Println(resp.StatusCode)
-		fmt.Println(resp.Status)
-		fmt.Println(resp.PreviewBytes)
-		fmt.Println(resp.Header)
-		fmt.Println(resp.ContentRequest)
-		fmt.Println(resp.ContentResponse)
-	*/
 
 	samplefile, err := os.Create(filepath)
 	if err != nil {
