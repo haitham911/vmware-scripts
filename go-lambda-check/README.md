@@ -3,7 +3,7 @@
 
 check healthy server by Lambda function
 
-Package used in project icap-client ( https://github.com/egirna/icap-client )
+Package used in project icap-client ( https://github.com/k8-proxy/icap-client )
 
 operation first send request with pdf file to ICAP server
 
